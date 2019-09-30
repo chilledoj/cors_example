@@ -41,7 +41,7 @@ module.exports = function(opts){
     next()
   }
   // Mount the pre-flight request
-  if(corsEnabled){
+  if(corsEnabled===true){
     app.options("/api", cors, function(req, res, next){
       console.log("OPTIONS route:",req.headers)
       res.sendStatus(200);
