@@ -1,0 +1,9 @@
+body{
+  width: 100%;
+}
+#app{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
